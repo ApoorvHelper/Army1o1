@@ -1,0 +1,52 @@
+:root {
+
+    --army1o1-logo: #685e79;
+    --army1o1-page-bg: #ffffff;
+    --army1o1-element-bg: #4285f4;
+    --army1o1-text: #000000;
+    --army1o1-contrast-text: #ffffff;
+    --army1o1-secondary-text: #70757a;
+    --army1o1-result-bg: #ffffff;
+    --army1o1-result-title: #1967d2;
+    --army1o1-result-url: #0d652d;
+    --army1o1-result-visited: #4b11a8;
+
+    --army1o1-dark-logo: #685e79;
+    --army1o1-dark-page-bg: #101020;
+    --army1o1-dark-element-bg: #4285f4;
+    --army1o1-dark-text: #ffffff;
+    --army1o1-dark-contrast-text: #ffffff;
+    --army1o1-dark-secondary-text: #bbbbbb;
+    --army1o1-dark-result-bg: #212131;
+    --army1o1-dark-result-title: #64a7f6;
+    --army1o1-dark-result-url: #34a853;
+    --army1o1-dark-result-visited: #bbbbff;
+}
+
+#army1o1-w {
+    fill: #4285f4;
+}
+
+#army1o1-h {
+    fill: #ea4335;
+}
+
+#army1o1-o-1 {
+    fill: #fbbc05;
+}
+
+#army1o1-o-2 {
+    fill: #4285f4;
+}
+
+#army1o1-g {
+    fill: #34a853;
+}
+
+#army1o1-l {
+    fill: #ea4335;
+}
+
+#army1o1-e {
+    fill: #fbbc05;
+}

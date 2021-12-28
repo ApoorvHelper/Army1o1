@@ -1,0 +1,201 @@
+html {
+    background: var(--army1o1-dark-page-bg) !important;
+}
+
+body {
+    background: var(--army1o1-dark-page-bg) !important;
+}
+
+div {
+    color: var(--army1o1-dark-text) !important;
+}
+
+label {
+    color: var(--army1o1-dark-contrast-text) !important;
+}
+
+li a {
+    color: var(--army1o1-dark-result-url) !important;
+}
+
+li {
+    color: var(--army1o1-dark-text) !important;
+}
+
+textarea {
+    background: var(--army1o1-dark-page-bg) !important;
+    color: var(--army1o1-dark-text) !important;
+}
+
+a:visited h3 div {
+    color: var(--army1o1-dark-result-visited) !important;
+}
+
+a:link h3 div {
+    color: var(--army1o1-dark-result-title) !important;
+}
+
+a:link div {
+    color: var(--army1o1-dark-result-url) !important;
+}
+
+div span {
+    color: var(--army1o1-dark-secondary-text) !important;
+}
+
+input {
+    background-color: var(--army1o1-dark-page-bg) !important;
+    color: var(--army1o1-dark-text) !important;
+}
+
+select {
+    background: var(--army1o1-dark-page-bg) !important;
+    color: var(--army1o1-dark-text) !important;
+}
+
+.search-container {
+    background-color: var(--army1o1-dark-page-bg) !important;
+}
+
+.ZINbbc {
+    overflow: hidden;
+    background-color: var(--army1o1-dark-result-bg) !important;   
+}
+
+.BVG0Nb {
+    background-color: var(--army1o1-dark-result-bg) !important; 
+}
+
+.bRsWnc {
+    background-color: var(--army1o1-dark-result-bg) !important;   
+    /*display: none;*/
+}
+
+.BVG0Nb {
+    background-color: var(--army1o1-dark-page-bg) !important;
+}
+
+.x54gtf {
+    background-color: var(--army1o1-dark-divider) !important;
+}
+
+.Q0HXG {
+    background-color: var(--army1o1-dark-divider) !important;
+}
+
+.LKSyXe {
+    background-color: var(--army1o1-dark-divider) !important;
+}
+
+.home-search {
+    border-color: var(--army1o1-dark-element-bg) !important;
+}
+
+.sa1toc {
+	background: var(--army1o1-dark-element-bg) !important;
+}
+
+#search-bar {
+    border-color: var(--army1o1-dark-element-bg) !important;
+    color: var(--army1o1-dark-text) !important;
+    background-color: var(--army1o1-dark-result-bg) !important;
+    border-bottom: 2px solid var(--army1o1-dark-element-bg);
+}
+
+#search-bar:focus {
+    color: var(--army1o1-dark-text) !important;
+}
+
+#search-submit {
+    border: 1px solid var(--army1o1-dark-element-bg) !important;
+    background: var(--army1o1-dark-element-bg) !important;
+    color: var(--army1o1-dark-contrast-text) !important;
+}
+
+.info-text {
+    color: var(--army1o1-dark-contrast-text) !important;
+    opacity: 75%;
+}
+
+.collapsible {
+    color: var(--army1o1-dark-text) !important;
+}
+
+.collapsible:after {
+    color: var(--army1o1-dark-text) !important;
+}
+
+.active {
+    background-color: var(--army1o1-dark-element-bg) !important;
+    color: var(--army1o1-dark-contrast-text) !important;
+}
+
+.content {
+    background-color: var(--army1o1-dark-element-bg) !important;
+    color: var(--army1o1-contrast-text) !important;
+}
+
+.active:after {
+    color: var(--army1o1-dark-contrast-text) !important;
+}
+
+.link {
+    color: var(--army1o1-dark-contrast-text);
+}
+
+.link-color {
+    color: var(--army1o1-dark-result-url) !important;
+}
+
+.autocomplete-items {
+    border: 1px solid var(--army1o1-dark-element-bg);
+}
+
+.autocomplete-items div {
+    color: var(--army1o1-dark-text);
+    background-color: var(--army1o1-dark-page-bg);
+    border-bottom: 1px solid var(--army1o1-dark-element-bg);
+}
+
+.autocomplete-items div:hover {
+    background-color: var(--army1o1-dark-element-bg);
+    color: var(--army1o1-dark-contrast-text) !important;
+}
+
+.autocomplete-active {
+    background-color: var(--army1o1-dark-element-bg) !important;
+    color: var(--army1o1-dark-contrast-text) !important;
+}
+
+.footer {
+    color: var(--army1o1-dark-text);
+}
+
+path {
+    fill: var(--army1o1-dark-logo);
+}
+
+.header-div {
+    background-color: var(--army1o1-dark-result-bg) !important;
+}
+
+#search-reset {
+    color: var(--army1o1-dark-text) !important;
+}
+
+.mobile-search-bar {
+    background-color: var(--army1o1-dark-result-bg) !important;
+    color: var(--army1o1-dark-text) !important;
+}
+
+.search-bar-desktop {
+    color: var(--army1o1-dark-text) !important;
+}
+
+.ip-text-div, .update_available, .cb_label, .cb {
+  color: var(--army1o1-dark-secondary-text) !important;
+}
+
+.cb:focus {
+  color: var(--army1o1-dark-contrast-text) !important;
+}

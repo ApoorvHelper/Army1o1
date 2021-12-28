@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -euo pipefail
+SCRIPT_DIR="$(builtin cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
+SUBDIR="${1:-software}"
+export software_ROOT="$SCRIPT_DIR/$SUBDIR"
+export STATIC_FOLDER="$software_ROOT/static"
+rm -f "$SCRIPT_DIR"/software/static/build/*.js
+rm -f "$SCRIPT_DIR"/software/static/build/*.css
+if [[ "$SUBDIR" == "test" ]]; then
+    
+    rm -rf "$STATIC_FOLDER"
+    ln -s "$SCRIPT_DIR/software/static" "$STATIC_FOLDER"
+    pytest -sv
+else
+    mkdir -p "$STATIC_FOLDER"
+    python3 -um software \
+      --host "${ADDRESS:-0.0.0.0}" \
+      --port "${PORT:-"${EXPOSE_PORT:-5000}"}"
+fi

@@ -1,0 +1,125 @@
+<html style="background: #000;">
+<head>
+    <link rel="apple-touch-icon" sizes="57x57" href="static/favicon.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="static/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon.png">
+    <link rel="manifest" href="static/img/favicon/manifest.json">
+    <meta name="referrer" content="no-referrer">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="static/favicon.png">
+    <script type="text/javascript" src="{{ cb_url('autocomplete.js') }}"></script>
+    <script type="text/javascript" src="{{ cb_url('controller.js') }}"></script>
+    <link rel="search" href="opensearch.xml" type="application/opensearchdescription+xml" title="Army1o1 Search">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ cb_url('logo.css') }}">
+    {% if config.theme %}
+        {% if config.theme == 'system' %}
+            <style>
+                @import "{{ cb_url('light-theme.css') }}" screen;
+                @import "{{ cb_url('dark-theme.css') }}" screen and (prefers-color-scheme: dark);
+            </style>
+        {% else %}
+            <link rel="stylesheet" href="{{ cb_url(config.theme + '-theme.css') }}"/>
+        {% endif %}
+    {% else %}
+        <link rel="stylesheet" href="{{ cb_url(('dark' if config.dark else 'light') + '-theme.css') }}"/>
+    {% endif %}
+    <link rel="stylesheet" href="{{ cb_url('main.css') }}">
+    <noscript>
+        <style>
+            #main {
+                display: inherit !important;
+            }
+
+            .content {
+                max-height: 400px;
+                padding: 18px;
+                border-radius: 10px;
+                overflow-y: scroll;
+            }
+
+            .collapsible {
+                display: none;
+            }
+        </style>
+    </noscript>
+    <style>{{ config.style }}</style>
+    <title style="color:black;font-size:80px">Army1O1</title>
+</head>
+<body id="main">
+<div style="text-align:center;">
+..Jai Hind..
+</div>
+<div class="search-container">
+<div class="logo-container" style="color:black;font-size:70px">
+        Army1o1
+    </div>
+    <form id="search-form" action="search" method="{{ 'get' if config.get_only else 'post' }}">
+        <div class="search-fields">
+            <div class="autocomplete">
+<!--             <div onclick="voice_search();" style="border: 2px solid black;background-color: #ff5733">Voice Search</div> -->
+                <input
+                        type="text"
+                        name="q"
+                        id="search-bar"
+                        class="home-search"
+                        autofocus="autofocus"
+                        autocapitalize="none"
+                        spellcheck="false"
+                        autocorrect="off"
+                        autocomplete="off"
+                        dir="auto">
+            </div>
+            <input type="submit" id="search-submit" value="{{ translation['search'] }}">
+            <br>
+            <br>
+            <br>
+            <div onclick="voice_search();" style="border: 2px solid black;background-color: #4285f4;width:25%;text-align:center;margin-left:36%;cursor:pointer;">Voice Search</div>
+        </div>
+    </form>
+</div>
+</body>
+<script>
+function voice_search(){
+// var speech = true;
+// window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+// 
+// const recognition = new SpeechRecognition();
+// recognition.interimResults = true;
+// const words = document.querySelec('#search-bar');
+// words.appendChild(p);
+// 
+// recognition.addEventListener('result', e => {
+// 	const transcript = Array.from(e.results)
+// 	.map(result => result[0])
+// 	.map(result => result.transcript)
+// 	.join('')
+// 	
+// 	document.getElementById("search-bar").innerHTML = transcript;
+// 	console.log(transcript);
+// });
+// 
+// if (speech == true) {
+// 	recognition.start();
+// 	recognition.addEventListener('end', recognition.start);
+// }
+	var recognition =new webkitSpeechRecognition();
+	recognition.lang = "en-GB";
+	recognition.onresult = function(event)
+	{
+		document.getElementById('search-bar').value=event.results[0][0].transcript;
+	}
+	recognition.start();
+}
+</script>
+</html>
